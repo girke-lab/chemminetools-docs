@@ -1,0 +1,59 @@
+# Site settings
+title: ChemMine Tools Help
+email: your-email@domain.com
+description: >
+  Documentation and help for ChemMine Tools
+lang: en-US
+
+#baseurl: "/jekyll-test/help" # the subpath of your site, e.g. /blog/
+#url: "https://girke-lab.github.io" # the base hostname & protocol for your site
+cmt_address: "https://chemminetools.ucr.edu"
+git_address: "https://github.com/girke-lab/chemminetools-docs"
+git_edit_address: "https://github.com/girke-lab/chemminetools-docs/blob/master"
+
+# theme options from https://bootswatch.com/3/
+# comment out this to use default Bootstrap
+#bootwatch: paper # cerulean cosmo custom cyborg darkly flatly journal lumen readable sandstone simplex slate solar spacelab superhero united yeti
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+# Plugins (previously gems:)
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+  - vendor/
+  - .bundle/
+timezone: America/Los_Angeles
+defaults:
+#- scope:
+#    path: _posts
+#    type: posts
+#  values:
+#    layout: post
+#    sectionid: blog
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+#  posts:
+#    permalink: /blog/:year/:month/:day/:title/
+#    output: true

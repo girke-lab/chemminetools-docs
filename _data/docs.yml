@@ -1,0 +1,13 @@
+- title: Documentation Pages
+  docs:
+  - index
+  - general
+  - compound
+  - similarity-searching
+  - similarity-comparison
+  - clustering
+  - molecular-property
+  - chemminer
+  - drug-target
+  - theory
+  - developers
