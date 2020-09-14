@@ -3,7 +3,7 @@ title: "Welcome: ChemMine Tools Help and Tutorials"
 redirect_from: /index.html
 ---
 
-ChemMine Tools is a free online service for analyzing and clustering small molecules by structural similarities, physicochemical properties or custom data types. This tutorial introduces the functionalities, data formats, methods and algorithms of this web service.
+ChemMine Tools is_ a free online service for analyzing and clustering small molecules by structural similarities, physicochemical properties or custom data types. This tutorial introduces the functionalities, data formats, methods and algorithms of this web service.
 
 ### Browser Recommendation
 
