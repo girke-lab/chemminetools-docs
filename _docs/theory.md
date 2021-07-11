@@ -13,9 +13,9 @@ To compare, cluster and search small molecules with respect to their structural 
 
 ### Structural Descriptors
 
-#### (1) Structural Descriptors
+#### 1. Structural Descriptors
   
-##### (a) Atom Pairs &nbsp; [   Similarity Comparison     Clustering   ]
+##### a. Atom Pairs &nbsp; &nbsp; [   [Similarity Comparison](https://chemminetools.ucr.edu/similarity/)  &nbsp; &nbsp;  [Clustering](https://chemminetools.ucr.edu/myCompounds/addCompoundsNoneNone)   ]
   
 Atom pairs are a structural descriptor type that is defined by the shortest paths among the non-hydrogen atoms in a molecule. Each path is described by the types of atoms in a pair, the length of their shortest bond path, the number of their pi electrons and the non-hydrogen atoms bonded to them. The number of atom pairs describing a molecule grows with its number of atoms. To use atom pairs for similarity comparisons, one can simply enumerate their common and unique atom pairs, and then use these numbers to compute a similarity coefficient (see below).
 
