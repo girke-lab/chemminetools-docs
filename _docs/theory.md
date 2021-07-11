@@ -15,10 +15,12 @@ To compare, cluster and search small molecules with respect to their structural 
 
 1. Structural Descriptors
   a. Atom Pairs &nbsp; [   Similarity Comparison     Clustering   ]
-Atom pairs are a structural descriptor type that is defined by the shortest paths among the non-hydrogen atoms in a molecule. Each path is described by the types of atoms in a pair, the length of their shortest bond path, the number of their pi electrons and the non-hydrogen atoms bonded to them. The number of atom pairs describing a molecule grows with its number of atoms. To use atom pairs for similarity comparisons, one can simply enumerate their common and unique atom pairs, and then use these numbers to compute a similarity coefficient (see below).
+  
+  Atom pairs are a structural descriptor type that is defined by the shortest paths among the non-hydrogen atoms in a molecule. Each path is described by the types of atoms in a pair, the length of their shortest bond path, the number of their pi electrons and the non-hydrogen atoms bonded to them. The number of atom pairs describing a molecule grows with its number of atoms. To use atom pairs for similarity comparisons, one can simply enumerate their common and unique atom pairs, and then use these numbers to compute a similarity coefficient (see below).
 
   b. PubChem Fingerprints &nbsp; [   Similarity Search   ]
-The fingerprints provided by PubChem are a binary representation of the presence and absence of a library of 881 substructure features (see here for details). In this system every molecular structure is described by 881 bits where 1 indicates the presence and 0 the absence of a feature. Compared to atom pairs, the PubChem fingerprints are a knowledge-based system that stores less information than the much more complex and unbiased atom pair concept. For database searching fingerprints are often much more time and memory efficient, but they are less sensitive than atom pair descriptors (see Chen & Reynolds, 2002; Cao et al. 2008).
+
+  The fingerprints provided by PubChem are a binary representation of the presence and absence of a library of 881 substructure features (see here for details). In this system every molecular structure is described by 881 bits where 1 indicates the presence and 0 the absence of a feature. Compared to atom pairs, the PubChem fingerprints are a knowledge-based system that stores less information than the much more complex and unbiased atom pair concept. For database searching fingerprints are often much more time and memory efficient, but they are less sensitive than atom pair descriptors (see Chen & Reynolds, 2002; Cao et al. 2008).
 
 (c) Maximum Common Substructure
 [   Similarity Comparison   ]
