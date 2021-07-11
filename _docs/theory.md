@@ -46,7 +46,7 @@ Setting `α` and `β` in the Tversky index to 0.5 returns the Dice index.
 
 Sets of numeric property values of compounds, such as physiochemical properties or bioactivity values, can also be used to compute a similarity measure among compounds. For instance, ChemMine Tools uses the physiochemical descriptors of compounds - or any numeric custom data set - for the computation of Pearson correlation coefficients as similarity measure for the calculation of an item-to-item similarity matrix that can be converted into a distance matrix for downstream clustering.
 
-Clustering based on property values is performed follows:
+Clustering based on property values is performed as follows:
 
 1. Scaling and centering the property table row-wise by subtracting from each value the row mean and then dividing by the standard deviation of each row.
 2. Calculation of an all-against-all Pearson correlation matrix. This is transformed into a distance matrix by subtracting each value from 1.
