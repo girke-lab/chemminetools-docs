@@ -14,14 +14,14 @@ To compare, cluster and search small molecules with respect to their structural 
 ### Structural Descriptors
 
 #### 1. Structural Descriptors
-  
-##### __a. Atom Pairs__ &nbsp; &nbsp; [   [Similarity Comparison](https://chemminetools.ucr.edu/similarity/)   ] &nbsp; &nbsp; [   [Clustering](https://chemminetools.ucr.edu/tools/launch_job/Clustering/)   ]  
-  
+
+##### __a. Atom Pairs__ &nbsp; &nbsp; [   [Similarity Comparison](https://chemminetools.ucr.edu/similarity/)   ] &nbsp; &nbsp; [   [Clustering](https://chemminetools.ucr.edu/tools/launch_job/Clustering/)   ]
+
 Atom pairs are a structural descriptor type that is defined by the shortest paths among the non-hydrogen atoms in a molecule. Each path is described by the types of atoms in a pair, the length of their shortest bond path, the number of their pi electrons and the non-hydrogen atoms bonded to them. The number of atom pairs describing a molecule grows with its number of atoms. To use atom pairs for similarity comparisons, one can simply enumerate their common and unique atom pairs, and then use these numbers to compute a similarity coefficient (see below).
 
 ##### __b. PubChem Fingerprints__ &nbsp; &nbsp; [   [Similarity Search](https://chemminetools.ucr.edu/eisearch/query/)   ]
 
-The fingerprints provided by PubChem are a binary representation of the presence and absence of a library of 881 substructure features (see here for details). In this system every molecular structure is described by 881 bits where 1 indicates the presence and 0 the absence of a feature. Compared to atom pairs, the PubChem fingerprints are a knowledge-based system that stores less information than the much more complex and unbiased atom pair concept. For database searching fingerprints are often much more time and memory efficient, but they are less sensitive than atom pair descriptors (see Chen & Reynolds, 2002; Cao et al. 2008).
+The fingerprints provided by PubChem are a binary representation of the presence and absence of a library of 881 substructure features ([see here for details](ftp://ftp.ncbi.nih.gov/pubchem/specifications/pubchem_fingerprints.txt)). In this system every molecular structure is described by 881 bits where 1 indicates the presence and 0 the absence of a feature. Compared to atom pairs, the PubChem fingerprints are a knowledge-based system that stores less information than the much more complex and unbiased atom pair concept. For database searching fingerprints are often much more time and memory efficient, but they are less sensitive than atom pair descriptors ([see Chen & Reynolds, 2002; Cao et al. 2008](https://pubmed.ncbi.nlm.nih.gov/18586736/)).
 
 ##### __c. Maximum Common Substructure__ &nbsp; &nbsp; [   [Similarity Comparison](https://chemminetools.ucr.edu/similarity/)   ]
 The maximum common substructure (MCS) problem is a graph-based similarity concept that is defined as the largest substructure (sub-graph) shared among two compounds. It is a pair-wise concept that is not directly related to the above structural descriptors, but its results (e.g. size of MCS relative to source structures) can be used for the computation of the same similarity coefficients (see below). Compared to descriptor-based similarity concepts, the MCS method provides the most accurate and sensitive similarity measure, especially for compounds with large size differences.
@@ -40,7 +40,7 @@ The Tversky index is defined as `c/(α*a + β*b + c)`. It extends the Tanimoto i
 
 Setting `α` and `β` in the Tversky index to 0.5 returns the Dice index.
 
-### Similarity Measures for Property and Activity Profiles 
+### Similarity Measures for Property and Activity Profiles
 
 ##### __a. Property-based Comparisons__ &nbsp; &nbsp; [   [Clustering](https://chemminetools.ucr.edu/tools/launch_job/Clustering/)   ]
 
